@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package PracticeStacks;
+package Stacks;
 
 import java.util.NoSuchElementException;
 
@@ -42,7 +42,7 @@ public class StackWithArray {
         return count == 0;
     }
     
-    public void resize(int capacity){
+    public void resize(int capacity){        
         Object[] tempArray = new Object[capacity];
         for(int i = 0;i < count; i++){
             tempArray[i] = items[i];
