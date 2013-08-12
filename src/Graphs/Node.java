@@ -2,14 +2,17 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package practice;
+package Graphs;
 
 /**
  *
  * @author dimitar
  */
-public class InsertionSort implements ISortAlgorithm {
-    public void Sort(int[] a){
-        
+public class Node<T> {
+    public T data;
+    public Node next;
+
+    public Node(T data){
+        this.data = data;
     }
 }

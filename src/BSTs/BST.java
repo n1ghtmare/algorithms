@@ -33,11 +33,14 @@ public class BST<Key extends Comparable<Key>, Value> {
     private Node put(Node n, Key key, Value value){
         if(n == null){
             return new Node(key, value, 1);
-        } else if(key.compareTo(n.key) > 0){
+        } 
+        else if(key.compareTo(n.key) > 0){
             n.right = put(n.right, key, value);
-        } else if(key.compareTo(n.key) < 0){
+        } 
+        else if(key.compareTo(n.key) < 0){
             n.left = put(n.left, key, value);
-        } else {
+        } 
+        else {
             n.value = value;
         }        
         // the count of the sides as well as the newly added node
@@ -53,9 +56,11 @@ public class BST<Key extends Comparable<Key>, Value> {
     private int rank(Node n, Key key){
         if(n == null){
             return 0;
-        } else if(key.compareTo(n.key) > 0) {
+        } 
+        else if(key.compareTo(n.key) > 0) {
             return 1 + size(n.left) + rank(n.right, key);
-        } else if(key.compareTo(n.key) < 0) {
+        } 
+        else if(key.compareTo(n.key) < 0) {
             return rank(n.left, key);
         }
         return size(n.left);
