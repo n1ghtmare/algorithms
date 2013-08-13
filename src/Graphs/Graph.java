@@ -10,6 +10,7 @@ package Graphs;
  */
 public class Graph {
     private final int vertices;
+    private int edges;
     private LinkedList<Integer>[] lists;
         
     public Graph(int vertices){
@@ -26,6 +27,15 @@ public class Graph {
         // is between both and has to show up in both's adjacent vertices
         lists[startVertex].appendToTail(endVertex);
         lists[endVertex].appendToTail(startVertex);
+        edges++;
+    }
+    
+    public int getEdges(){
+        return edges;
+    }
+    
+    public int getVertices(){
+        return vertices;
     }
     
     public Iterable<Integer> adjacent(int vertex) {
