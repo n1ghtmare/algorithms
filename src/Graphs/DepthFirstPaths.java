@@ -43,8 +43,10 @@ public class DepthFirstPaths {
         }
         
         LinkedList<Integer> path = new LinkedList<Integer>();
+        // start from the source and move back to all the edges connected
         while(vertex != source){
             path.append(vertex);
+            // move to the next vertex that is connected
             vertex = edgeTo[vertex];
         }
         path.append(source);        
