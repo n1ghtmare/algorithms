@@ -17,7 +17,6 @@ public class Simulate {
         
         for(String s : permutations){
             System.out.println(s);
-        }
-                
+        }                
     }
 }

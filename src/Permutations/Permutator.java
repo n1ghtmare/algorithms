@@ -12,6 +12,7 @@ import java.util.List;
  * @author dimitar
  */
 public class Permutator {
+    // Running time is O(n!) - factorial
     public List<String> generatePermutations(String word){
         List<String> permutations = new ArrayList<String>();
         permute("", word, permutations);
