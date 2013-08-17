@@ -14,10 +14,13 @@ import java.util.Arrays;
 public class Simulate {
     public static void main(String[] args) throws FileNotFoundException, IOException {
         selectionSort("tiny.txt");
-        //selectionSort("words3.txt");
+        selectionSort("words3.txt");
         
         insertionSort("tiny.txt");
-        //insertionSort("words3.txt");
+        insertionSort("words3.txt");
+        
+        mergeSort("tiny.txt");
+        mergeSort("words3.txt");
     }
     
     private static void insertionSort(String fileName) throws FileNotFoundException, IOException {
@@ -30,13 +33,19 @@ public class Simulate {
         simulateSort(selection, fileName);
     }
     
+    private static void mergeSort(String fileName) throws FileNotFoundException, IOException {
+        Merge merge = new Merge();
+        simulateSort(merge, fileName);
+    }
+    
     private static void simulateSort(ISorter sortingAlgorithm, String fileName) throws FileNotFoundException, IOException{
         String[] words = getFromFile(fileName);
         sortingAlgorithm.sort(words);
         
         for(String s : words){
-            System.out.println(s);
+            System.out.print(s + " ");
         }
+        System.out.println();
     }
         
     private static String[] getFromFile(String fileName) throws FileNotFoundException, IOException {
