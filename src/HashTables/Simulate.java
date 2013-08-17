@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package HashTables;
 
 /**
@@ -11,20 +7,17 @@ package HashTables;
 public class Simulate {
     public static void main(String[] args){
         HashTableWithSeparateChaining<String, String> ht = new HashTableWithSeparateChaining<String, String>(5);
-        ht.put("A", "Denica Conkova");
-        ht.put("A","This will be overriden");
-        ht.put("F", "Some test yo");
-        ht.put("B", "Dimitar Dimitrov");
-        ht.put("C", "London");
-        ht.put("D", "Google");
-        ht.put("E", "Google2");
-        ht.put("F", "Google3");
-        ht.put("G", "Google4");
-        ht.put("H", "Google5");
-        ht.put("M", "Google6");
-        ht.put("S", "Super");
-        ht.put("J", "Jaguar");
-        
+        ht.put("A", "Entry - A");
+        ht.put("A","This will be overridden");
+        ht.put("F", "Entry - F");
+        ht.put("B", "Entry - B");
+        ht.put("C", "Entry - C");
+        ht.put("D", "Entry - D");
+        ht.put("E", "Entry - E");
+        ht.put("F", "Entry - F (will be overridden");
+        ht.put("G", "Entry - G");
+        ht.put("H", "Entry - H");
+        ht.put("M", "Entry - M");        
         
         System.out.println(ht.get("A"));
     }

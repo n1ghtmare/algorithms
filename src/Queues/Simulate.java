@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package Queues;
 
 /**
@@ -16,10 +12,10 @@ public class Simulate {
     
     private static void simulateQueueWithLinkedList(){
         QueueWithLinkedList q = new QueueWithLinkedList();        
-        q.enqueue("Dimitar Dimitrov");
-        q.enqueue("Denica Conkova");
-        q.enqueue("Someone else");
-        q.enqueue("Test");
+        q.enqueue("Entry 1");
+        q.enqueue("Entry 2");
+        q.enqueue("Entry 3");
+        q.enqueue("Entry 4");
         
         System.out.println(q.dequeue());
         System.out.println(q.dequeue());
@@ -29,9 +25,10 @@ public class Simulate {
     
     private static void simulateQueueWithArray(){
         QueueWithArray q = new QueueWithArray();
-        q.enqueue("Dimitar Dimitrov");
-        q.enqueue("Denica Conkova");
-        q.enqueue("Someone else");
+        q.enqueue("Entry 1");
+        q.enqueue("Entry 2");
+        q.enqueue("Entry 3");
+        q.enqueue("Entry 4");
         
         System.out.println(q.dequeue());
         System.out.println(q.dequeue());

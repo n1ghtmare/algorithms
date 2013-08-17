@@ -1,0 +1,56 @@
+package Sorting;
+
+import java.io.FileNotFoundException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+
+/**
+ *
+ * @author dimitar
+ */
+public class Simulate {
+    public static void main(String[] args) throws FileNotFoundException, IOException {
+        selectionSort("tiny.txt");
+        //selectionSort("words3.txt");
+        
+        insertionSort("tiny.txt");
+        //insertionSort("words3.txt");
+    }
+    
+    private static void insertionSort(String fileName) throws FileNotFoundException, IOException {
+        Insertion insertion = new Insertion();
+        simulateSort(insertion, fileName);
+    }
+    
+    private static void selectionSort(String fileName) throws FileNotFoundException, IOException{
+        Selection selection = new Selection();
+        simulateSort(selection, fileName);
+    }
+    
+    private static void simulateSort(ISorter sortingAlgorithm, String fileName) throws FileNotFoundException, IOException{
+        String[] words = getFromFile(fileName);
+        sortingAlgorithm.sort(words);
+        
+        for(String s : words){
+            System.out.println(s);
+        }
+    }
+        
+    private static String[] getFromFile(String fileName) throws FileNotFoundException, IOException {
+        String filePath = String.format("src/Sorting/%s", fileName);
+        FileReader fr = new FileReader(filePath);
+        BufferedReader br = new BufferedReader(fr);
+        
+        ArrayList<String> words = new ArrayList<String>();        
+        while(br.ready()){
+            String line = br.readLine();
+            String[] segments = line.split(" ");
+            words.addAll(Arrays.asList(segments));
+        }      
+        
+        return words.toArray(new String[words.size()]);
+    }
+}
