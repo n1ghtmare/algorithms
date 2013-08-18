@@ -8,6 +8,6 @@ package Sorting;
  *
  * @author dimitar
  */
-public interface ISorter {
+public interface ISortingAlgorithm {
     public void sort(Comparable[] a);
 }

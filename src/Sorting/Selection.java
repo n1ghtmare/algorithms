@@ -4,7 +4,7 @@ package Sorting;
  *
  * @author dimitar
  */
-public class Selection implements ISorter {
+public class Selection implements ISortingAlgorithm {
     // Swaps - O(n) - linear
     // Space - O(1) - constant
     // Running time - O(n^2) - quadratic

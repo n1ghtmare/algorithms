@@ -4,7 +4,7 @@ package Sorting;
  *
  * @author dimitar
  */
-public class Merge implements ISorter {
+public class Merge implements ISortingAlgorithm {
     private Comparable[] aux;
     
     // Space - O(n) - for arrays and O(n lg(n)) additional for linked lists

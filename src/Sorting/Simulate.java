@@ -21,6 +21,9 @@ public class Simulate {
         
         mergeSort("tiny.txt");
         mergeSort("words3.txt");
+        
+        quickSort("tiny.txt");
+        quickSort("words3.txt");
     }
     
     private static void insertionSort(String fileName) throws FileNotFoundException, IOException {
@@ -38,7 +41,12 @@ public class Simulate {
         simulateSort(merge, fileName);
     }
     
-    private static void simulateSort(ISorter sortingAlgorithm, String fileName) throws FileNotFoundException, IOException{
+    private static void quickSort(String fileName) throws FileNotFoundException, IOException {
+        Quick quick = new Quick();
+        simulateSort(quick, fileName);
+    }
+    
+    private static void simulateSort(ISortingAlgorithm sortingAlgorithm, String fileName) throws FileNotFoundException, IOException{
         String[] words = getFromFile(fileName);
         sortingAlgorithm.sort(words);
         
@@ -58,8 +66,7 @@ public class Simulate {
             String line = br.readLine();
             String[] segments = line.split(" ");
             words.addAll(Arrays.asList(segments));
-        }      
-        
+        }        
         return words.toArray(new String[words.size()]);
     }
 }
