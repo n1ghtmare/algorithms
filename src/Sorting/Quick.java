@@ -13,11 +13,10 @@ public class Quick implements ISortingAlgorithm {
     // Running time - Average: O(n log(n))
     // Running time - Worst: O(n^2)
     private void sort(Comparable[] a, int min, int max) {
-        if(max > 1){
+        if(max > 1) {
             int i = min, j = max;
             int mid = min + (max - min) / 2;
             Comparable pivot = a[mid];
-            
             while(i <= j) {
                 while(a[i].compareTo(pivot) < 0) {
                     i++;
@@ -32,14 +31,14 @@ public class Quick implements ISortingAlgorithm {
                     i++;
                     j--;
                 }
-            }
-            
-            if(i < max) {
-                sort(a, i, max);
-            }
-            
-            if(j > min) {
-                sort(a, min, j);
+                
+                if(i < max) {
+                    sort(a, i, max);
+                }
+                
+                if(j > min) {
+                    sort(a, min, j);
+                }
             }
         }
     }
