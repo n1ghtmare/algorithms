@@ -20,5 +20,22 @@ public class Simulate {
         ht.put("M", "Entry - M");        
         
         System.out.println(ht.get("A"));
+        
+        HashTableWithLinearProbing<String, String> htl = new HashTableWithLinearProbing<String, String>(5);
+        htl.put("A", "Entry - A");
+        htl.put("A", "This will be overridden");
+        htl.put("B", "Entry - B");
+        htl.put("C", "Entry - C");
+        htl.put("D", "Entry - D");
+        htl.put("E", "Entry - E");
+        htl.put("F", "Entry - F");
+        htl.put("G", "Entry - G");
+        System.out.println(htl.get("A"));
+        System.out.println(htl.get("B"));
+        System.out.println(htl.get("C"));
+        System.out.println(htl.get("D"));
+        System.out.println(htl.get("E"));
+        System.out.println(htl.get("F"));        
+        System.out.println(htl.get("G"));
     }
 }

@@ -38,15 +38,16 @@ public class StackWithArray {
         return count == 0;
     }
     
+    
+    public Object peek(){
+        return items[count-1];
+    }
+    
     public void resize(int capacity){        
         Object[] tempArray = new Object[capacity];
         for(int i = 0;i < count; i++){
             tempArray[i] = items[i];
         }
         items = tempArray;
-    }
-        
-    public Object peek(){
-        return items[count-1];
     }
 }
