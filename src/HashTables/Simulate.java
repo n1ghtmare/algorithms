@@ -30,6 +30,7 @@ public class Simulate {
         htl.put("E", "Entry - E");
         htl.put("F", "Entry - F");
         htl.put("G", "Entry - G");
+        
         System.out.println(htl.get("A"));
         System.out.println(htl.get("B"));
         System.out.println(htl.get("C"));

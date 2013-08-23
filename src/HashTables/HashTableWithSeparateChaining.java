@@ -13,6 +13,7 @@ public class HashTableWithSeparateChaining<Key, Value> {
     
     private Node<Key, Value>[] data;
     private int capacity;
+    private int count;
     
     public HashTableWithSeparateChaining(int capacity){
         this.capacity = capacity;
@@ -32,6 +33,7 @@ public class HashTableWithSeparateChaining<Key, Value> {
             }
             if(runner.key == key) {
                 runner.value = value;
+                count++;                
             } else {
                 runner.next = n;
             }            
@@ -57,5 +59,9 @@ public class HashTableWithSeparateChaining<Key, Value> {
     
     private int hash(Key key){
         return (key.hashCode() & 0x7FFFFFFF) % capacity;
+    }
+    
+    public int size() {
+        return count;
     }
 }

@@ -62,4 +62,8 @@ public class HashTableWithLinearProbing<Key, Value> {
         capacity = temp.capacity;
     }
     
+    public int size() {
+        return count;
+    }
+    
 }
