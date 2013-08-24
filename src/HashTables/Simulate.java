@@ -31,12 +31,17 @@ public class Simulate {
         htl.put("F", "Entry - F");
         htl.put("G", "Entry - G");
         
+        htl.delete("G");
+        System.out.println(htl.contains("F"));
+        
         System.out.println(htl.get("A"));
         System.out.println(htl.get("B"));
         System.out.println(htl.get("C"));
         System.out.println(htl.get("D"));
         System.out.println(htl.get("E"));
-        System.out.println(htl.get("F"));        
+        System.out.println(htl.get("F"));
+        
+        // should be null <-- deleted
         System.out.println(htl.get("G"));
     }
 }

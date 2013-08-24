@@ -62,6 +62,39 @@ public class HashTableWithLinearProbing<Key, Value> {
         capacity = temp.capacity;
     }
     
+    public boolean contains(Key key) {
+        return get(key)!= null;
+    }
+    
+    public void delete(Key key) {
+        if(contains(key)) {
+            int i = hash(key);
+            while(!key.equals(keys[i])) {
+                i = (i + 1) % capacity;
+            }
+            keys[i] = null;
+            values[i] = null;
+            i = (i + 1) % capacity;
+            
+            // move the keys/values if they have been previously probed
+            while(keys[i] != null) {
+                Key keyToRedo = keys[i];
+                Value valueToRedo = values[i];
+                keys[i] = null;
+                values[i] = null;
+                count--;
+                put(keyToRedo, valueToRedo);
+                
+                i = (i + 1) % capacity;
+            }
+            count--;
+            
+            if(count > 0 && count == capacity / 8){
+                resize(capacity/2);
+            }
+        }
+    }
+    
     public int size() {
         return count;
     }
