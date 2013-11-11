@@ -37,6 +37,28 @@ public class Common {
         return a[n];
     }
     
+    // Iterative Fibonacci computation v2
+    // Runnint time - O(n)
+    // Space - O(1)
+    public int fibI2(int n) {
+        if(n < 0) {
+            throw new IllegalArgumentException("Must be a non-negative number");
+        }
+        
+        if(n == 0) { return 0; }
+        if(n == 1) { return 1; }
+        
+		int p1 = 1;
+		int p2 = 2;
+		int result = 0;
+		for(int i = 2; i < n; i++) {
+			result = p1 + p2;
+			p1 = p2;
+			p2 = result;
+		}
+		return result;
+    }
+    
     // Cached (Memorization) Fibonacci computation
     // Running time = O(n)
     // Space - O(n)
