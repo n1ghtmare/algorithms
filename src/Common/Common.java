@@ -48,15 +48,16 @@ public class Common {
         if(n == 0) { return 0; }
         if(n == 1) { return 1; }
         
-		int p1 = 1;
-		int p2 = 2;
-		int result = 0;
-		for(int i = 2; i < n; i++) {
-			result = p1 + p2;
-			p1 = p2;
-			p2 = result;
-		}
-		return result;
+        int p1 = 1;
+        int p2 = 2;
+        int result = 0;
+        
+        for(int i = 2; i < n; i++) {
+        	result = p1 + p2;
+        	p1 = p2;
+        	p2 = result;
+        }
+        return result;
     }
     
     // Cached (Memorization) Fibonacci computation
