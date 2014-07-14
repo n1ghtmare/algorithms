@@ -1,4 +1,5 @@
 package BSTs;
+
 public class BST<Key extends Comparable<Key>, Value> {
     public class Node {
         public Key key;

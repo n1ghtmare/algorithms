@@ -1,9 +1,5 @@
 package Graphs;
 
-/**
- *
- * @author dimitar
- */
 public class Graph {
     private final int vertices;
     private int edges;

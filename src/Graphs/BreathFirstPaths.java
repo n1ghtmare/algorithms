@@ -1,9 +1,5 @@
 package Graphs;
 
-/**
- *
- * @author dimitar
- */
 public class BreathFirstPaths {
     private boolean[] visited;
     private int[] edgeTo;

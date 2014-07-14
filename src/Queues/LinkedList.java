@@ -1,9 +1,5 @@
 package Queues;
 
-/**
- *
- * @author dimitar
- */
 public class LinkedList {
     public Node head;
     

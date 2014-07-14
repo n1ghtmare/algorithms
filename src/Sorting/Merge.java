@@ -1,9 +1,5 @@
 package Sorting;
 
-/**
- *
- * @author dimitar
- */
 public class Merge implements ISortingAlgorithm {
     private Comparable[] aux;
     

@@ -1,9 +1,5 @@
 package Queues;
 
-/**
- *
- * @author dimitar
- */
 public class QueueWithLinkedList {
     private Node first;
     private Node last;

@@ -1,9 +1,5 @@
 package Sorting;
 
-/**
- *
- * @author dimitar
- */
 public class Insertion implements ISortingAlgorithm {
     // Space O(1) - constant
     // Swaps O(n^2) - linear

@@ -1,9 +1,5 @@
 package HashTables;
 
-/**
- *
- * @author dimitar
- */
 public class HashTableWithSeparateChaining<Key, Value> {
     private class Node<Key, Value> {
         private Key key;

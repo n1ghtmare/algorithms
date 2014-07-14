@@ -1,9 +1,5 @@
 package Common;
 
-/**
- *
- * @author dimitar
- */
 public class Common {
     // Recursive Fibonacci computation
     // Running time - O(2^n)

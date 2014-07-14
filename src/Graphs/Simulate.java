@@ -1,9 +1,5 @@
 package Graphs;
 
-/**
- *
- * @author dimitar
- */
 public class Simulate {
     public static void main(String[] args){        
         Graph g = new Graph(10);

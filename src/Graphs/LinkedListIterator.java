@@ -2,10 +2,6 @@ package Graphs;
 
 import java.util.Iterator;
 
-/**
- *
- * @author dimitar
- */
 public class LinkedListIterator<T> implements Iterator<T> {
     private Node<T> current;
     

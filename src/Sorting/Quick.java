@@ -1,9 +1,5 @@
 package Sorting;
 
-/**
- *
- * @author dimitar
- */
 public class Quick implements ISortingAlgorithm {
     @Override
     public void sort(Comparable[] a) {

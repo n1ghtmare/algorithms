@@ -1,9 +1,5 @@
 package Stacks;
 
-/**
- *
- * @author dimitar
- */
 public class LinkedList {
     public Node head;
     

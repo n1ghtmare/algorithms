@@ -1,9 +1,5 @@
 package Graphs;
 
-/**
- *
- * @author dimitar
- */
 public class DepthFirstPaths {
     private boolean[] visited;
     private int[] edgeTo;

@@ -2,10 +2,6 @@ package Graphs;
 
 import java.util.Iterator;
 
-/**
- *
- * @author dimitar
- */
 public class LinkedList<T> implements Iterable<T> {
 
     @Override

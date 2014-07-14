@@ -1,18 +1,13 @@
 package Sorting;
 
-import java.io.FileNotFoundException;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/**
- *
- * @author dimitar
- */
 public class Simulate {
-    public static void main(String[] args) throws FileNotFoundException, IOException {
+    public static void main(String[] args) throws IOException {
         selectionSort("tiny.txt");
         selectionSort("words3.txt");
         
@@ -26,27 +21,27 @@ public class Simulate {
         quickSort("words3.txt");
     }
     
-    private static void insertionSort(String fileName) throws FileNotFoundException, IOException {
+    private static void insertionSort(String fileName) throws IOException {
         Insertion insertion = new Insertion();
         simulateSort(insertion, fileName);
     }
     
-    private static void selectionSort(String fileName) throws FileNotFoundException, IOException{
+    private static void selectionSort(String fileName) throws IOException{
         Selection selection = new Selection();
         simulateSort(selection, fileName);
     }
     
-    private static void mergeSort(String fileName) throws FileNotFoundException, IOException {
+    private static void mergeSort(String fileName) throws IOException {
         Merge merge = new Merge();
         simulateSort(merge, fileName);
     }
     
-    private static void quickSort(String fileName) throws FileNotFoundException, IOException {
+    private static void quickSort(String fileName) throws IOException {
         Quick quick = new Quick();
         simulateSort(quick, fileName);
     }
     
-    private static void simulateSort(ISortingAlgorithm sortingAlgorithm, String fileName) throws FileNotFoundException, IOException{
+    private static void simulateSort(ISortingAlgorithm sortingAlgorithm, String fileName) throws IOException {
         String[] words = getFromFile(fileName);
         sortingAlgorithm.sort(words);
         
@@ -56,7 +51,7 @@ public class Simulate {
         System.out.println();
     }
         
-    private static String[] getFromFile(String fileName) throws FileNotFoundException, IOException {
+    private static String[] getFromFile(String fileName) throws IOException {
         String filePath = String.format("src/Sorting/%s", fileName);
         FileReader fr = new FileReader(filePath);
         BufferedReader br = new BufferedReader(fr);

@@ -1,9 +1,5 @@
 package Queues;
 
-/**
- *
- * @author dimitar
- */
 public class QueueWithArray {
     private Object[] items = new Object[1];
     private int count;

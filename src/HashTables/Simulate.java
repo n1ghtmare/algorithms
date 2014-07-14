@@ -1,9 +1,5 @@
 package HashTables;
 
-/**
- *
- * @author dimitar
- */
 public class Simulate {
     public static void main(String[] args){
         HashTableWithSeparateChaining<String, String> ht = new HashTableWithSeparateChaining<String, String>(5);

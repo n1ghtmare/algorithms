@@ -1,9 +1,5 @@
 package Searching;
 
-/**
- *
- * @author dimitar
- */
 public class BinarySearch {
     private Comparable[] a;
     

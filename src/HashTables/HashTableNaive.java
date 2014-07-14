@@ -1,9 +1,5 @@
 package HashTables;
 
-/**
- *
- * @author dimitar
- */
 public class HashTableNaive<Key, Value> {
     private int capacity;
     private Value[] data;
@@ -15,7 +11,7 @@ public class HashTableNaive<Key, Value> {
     }
     
     // No collision handling strategy ... if the hash function produces the same hash
-    // the data would be overriden
+    // the data would be overridden
     public void put(Key key, Value value){
         int hashIndex = hash(key);
         data[hashIndex] = value;

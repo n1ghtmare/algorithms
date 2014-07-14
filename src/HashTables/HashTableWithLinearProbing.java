@@ -1,9 +1,5 @@
 package HashTables;
 
-/**
- *
- * @author dimitar
- */
 public class HashTableWithLinearProbing<Key, Value> {
     private int count = 0;
     private int capacity;

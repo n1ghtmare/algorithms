@@ -1,9 +1,5 @@
 package Common;
 
-/**
- *
- * @author dimitar
- */
 public class Simulate {
     public static void main(String[] args) {
         printFibonacci(17);

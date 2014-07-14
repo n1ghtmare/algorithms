@@ -1,9 +1,5 @@
 package Sorting;
 
-/**
- *
- * @author dimitar
- */
 public class Selection implements ISortingAlgorithm {
     // Swaps - O(n) - linear
     // Space - O(1) - constant

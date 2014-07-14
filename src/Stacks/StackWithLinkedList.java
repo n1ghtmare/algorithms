@@ -2,10 +2,6 @@ package Stacks;
 
 import java.util.NoSuchElementException;
 
-/**
- *
- * @author dimitar
- */
 public class StackWithLinkedList {
     private Node top;
     

@@ -1,9 +1,5 @@
 package Stacks;
 
-/**
- *
- * @author dimitar
- */
 public class Simulate {
     public static void main(String[] args){
         simulateStackLinkedList();

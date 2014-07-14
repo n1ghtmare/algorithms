@@ -1,9 +1,5 @@
 package Graphs;
 
-/**
- *
- * @author dimitar
- */
 public class Queue<T> {
     private Node<T> first, last;
     

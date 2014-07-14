@@ -3,10 +3,6 @@ package Permutations;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author dimitar
- */
 public class Permutator {
     // Running time is O(n!) - factorial
     public List<String> generatePermutations(String word){
