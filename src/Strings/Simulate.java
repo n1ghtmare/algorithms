@@ -1,9 +1,5 @@
 package Strings;
 
-/**
- *
- * @author dimitar
- */
 public class Simulate {
     public static void main(String[] args) {
         Validator v = new Validator();

@@ -1,13 +1,4 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package BSTs;
-
-/**
- *
- * @author dimitar
- */
 public class BST<Key extends Comparable<Key>, Value> {
     public class Node {
         public Key key;

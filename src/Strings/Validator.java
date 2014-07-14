@@ -2,10 +2,6 @@ package Strings;
 
 import java.util.HashSet;
 
-/**
- *
- * @author dimitar
- */
 public class Validator {    
     public boolean hasNoRepeatingChars(String word) {
         HashSet<Character> uniqueChars = new HashSet<Character>();        
