@@ -3,7 +3,7 @@ package Strings;
 import java.util.HashSet;
 
 public class Validator {    
-    public boolean hasNoRepeatingChars(String word) {
+    public boolean hasRepeatingChars(String word) {
         HashSet<Character> uniqueChars = new HashSet<Character>();        
         final String temp = word.toLowerCase();
         

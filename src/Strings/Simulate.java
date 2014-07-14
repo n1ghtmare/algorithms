@@ -11,7 +11,7 @@ public class Simulate {
         String message = String.format(
                 "The value \"%s\" - %s repeating letters",
                 word,
-                v.hasNoRepeatingChars(word) ? "has" : "has no");
+                v.hasRepeatingChars(word) ? "has" : "has no");
         System.out.println(message);
     }
 }
