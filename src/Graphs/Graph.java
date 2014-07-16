@@ -16,7 +16,7 @@ public class Graph {
     
     public void addEdge(int startVertex, int endVertex){
         // need to add it to both lists since the connection/edge 
-        // is between both and has to show up in both's adjacent vertices
+        // is between both and has to show up in both adjacent vertices
         lists[startVertex].appendToTail(endVertex);
         lists[endVertex].appendToTail(startVertex);
         edges++;
